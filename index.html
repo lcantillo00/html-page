@@ -3,12 +3,55 @@
   <head>
     <meta charset="utf-8">
     <title>HTML-page</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
      <link rel="stylesheet" href="./main.css">
   </head>
   <body>
-    <a target="_blank" href="http://www.google.com">
-      <h1>Google</h1>
-    </a>
+    <img src="./forest-trees-waterfall.jpg" alt="waterfall">
+    <section>
+      <h1>Lilianne Cantillo</h1><!--remove
+  --><ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portafolio">Portafolio</a></li>
+      <li><a href="#resume">Resume </a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="fancy" type="button">Fancy</button>
 
+    </section>
+
+
+<section id="about" class="purple-title">
+  <h2>About</h2>
+  <hr>
+</section>
+
+<section id="portafolio" class="purple-title">
+  <h2>Portafolio</h2>
+  <hr>
+  </section>
+
+<section id="resume">
+  <h2>Resume</h2>
+  <hr>
+  </section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <hr>
+  </section>
+
+  <script type="text/javascript">
+  var x = document.querySelectorAll('li a');
+  console.log(x);
+  var redButton = document.getElementById('fancy');
+   redButton.addEventListener('click',function(){
+     x[0].classList.add('yellow-button');
+     x[1].classList.add('yellow-button');
+     x[2].classList.add('yellow-button');
+     x[3].classList.add('yellow-button');
+
+   });
+  </script>
   </body>
 </html>

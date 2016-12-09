@@ -1,3 +1,69 @@
-a {
-  color:red;
+img{
+position: absolute;
+z-index: -1;
+width: 100%;
+}
+
+
+h1{
+  display: inline-block;
+  width: 245px;
+  font-family: 'Roboto', sans-serif;
+}
+
+ul{
+  list-style-type: none;
+  display: inline-block;
+  width:  calc(100% - 245px);
+  padding: 0;
+  text-align: right;
+
+}
+li{
+  display: inline-block;
+}
+li a {
+  color: #fff;
+  margin: 10px;
+}
+.yellow-button{
+  color: yellow;
+}
+section{
+  min-height: 100vh;
+}
+
+section#about{
+  background-color: #eee;
+}
+section.purple-title h2{
+  color: rgb(128, 0, 128);
+
+}
+
+
+button{
+  background-color: red;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 3px 0 0 #555;
+  position: relative;
+  color:#fff;
+  text-shadow: 1px 1px 2px #000;
+  transition: all .3s;
+  left: 50%;
+ transform: translate(-50%, 50px);
+
+}
+
+button:hover{
+background-color:  rgb(255,50,50);
+
+}
+button:active{
+  box-shadow: none;
+  top: -3px;
 }
