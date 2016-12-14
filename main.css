@@ -1,7 +1,5 @@
-img{
-position: absolute;
-z-index: -1;
-width: 100%;
+body{
+  margin: 0;
 }
 
 
@@ -10,8 +8,10 @@ h1{
   width: 245px;
   font-family: 'Roboto', sans-serif;
 }
-section:first-of-type {
-
+section:first-of-type img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
 }
 section:first-of-type ul{
   list-style-type: none;
@@ -50,7 +50,7 @@ section.purple-title h2{
 }
 
 
-button{
+#fancy{
   background-color: red;
   border-radius: 100%;
   width: 50px;
@@ -68,11 +68,11 @@ button{
 
 }
 
-button:hover{
+#fancy:hover{
 background-color:  rgb(255,50,50);
 
 }
-button:active{
+#fancy:active{
   box-shadow: none;
   top: -3px;
 }
@@ -99,6 +99,39 @@ text-transform: capitalize;
 font-family: serif;
 
 }
+
+#gallery{
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+
+}
+#gallery figure{
+  max-width: 200px;
+  display: inline-block;
+}
+#gallery figure img{
+  width: 100%;
+
+}
+#gallery figcaption{
+  text-align: center;
+}
+#cards{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  max-width: 900px;
+  margin: auto;
+}
+#cards .card{
+  max-width: 200px;
+  margin: 20px;
+}
+.card img{
+  width: 100%;
+}
+
 #resume h4,
 #resume p {
   margin-left: 30px;
