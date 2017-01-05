@@ -128,7 +128,7 @@ SKILLS</p>
 <section id="contact">
     <h2>Contact</h2>
     <hr>
-    <form action="http://fvi-grad.com:4004/email" method="post">
+    <form id="contact-form">
       <input type="text" name="dest_email" value="lcantillo00@fvi.edu" style="display: none">
       <input type="text" name="full_name" value="" placeholder="Full name">
       <input type="text" name="phone" value="" placeholder="Phone">
@@ -138,24 +138,17 @@ SKILLS</p>
       <input type="text" name="message" value="" placeholder="message">
       <input type="text" name="subject" value="" placeholder="subject">
       <textarea name="name" rows="8" cols="80"></textarea>
-      <input type="submit" name="" value="Send">
+      <input id="send-btn" type="submit" name="" value="Send">
 
 
 
     </form>
   </section>
 
-  <script type="text/javascript">
-  var x = document.querySelectorAll('li a');
-  console.log(x);
-  var redButton = document.getElementById('fancy');
-   redButton.addEventListener('click',function(){
-     x[0].classList.add('yellow-button');
-     x[1].classList.add('yellow-button');
-     x[2].classList.add('yellow-button');
-     x[3].classList.add('yellow-button');
-
-   });
-  </script>
+  <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+  <script src= "main.js"></script>
   </body>
 </html>
